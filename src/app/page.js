@@ -6,8 +6,11 @@ import { db } from '../../firebase';
 import { collection, addDoc } from 'firebase/firestore';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import BarcodeScanner from './components/BarcodeScanner';
 
 export default function Home() {
+
+  <BarcodeScanner />
 
   const [FormData, setFormData] = useState({ name: '', email: '', message: ''});
   const [status, setStatus] = useState('');
