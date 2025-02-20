@@ -17,6 +17,7 @@ export default function Home() {
 
 
   const handleInputChange = (e) => {
+  
     const { name, value } = e.target;
     setFormData({ ...FormData, [name]: value });
   };
@@ -25,7 +26,7 @@ export default function Home() {
     e.preventDefault();
     setStatus('Submitting...');
     try {
-      const docRef = await addDoc(collection(db, 'messages'), FormData);
+      const docRef = await addDoc(collection(db, 'messages'), {FormData});
       console.log('Document written with ID: ', docRef.id);
       setStatus('Message sent successfully!');
       setFormData({ name: '', email: '', message: '' }); // Clear the form
@@ -192,10 +193,10 @@ export default function Home() {
           <p className="mt-4 text-2xl">Feel free to reach out lets work together!</p>
           <form className="mt-8" onSubmit={handleSubmit}>
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-              <input type="text" name='name' aria-label='your name' value={FormData.name} onChange={handleInputChange} className="p-4 bg-white rounded-lg shadow-lg" placeholder="Your Name" required />
-              <input type="email" name='email' aria-label='your email' value={FormData.email} onChange={handleInputChange} className="p-4 bg-white rounded-lg shadow-lg" placeholder="Your Email" required />
+              <input type="text" name='name' aria-label='your name' onChange={handleInputChange} value={FormData.name} className="p-4 bg-white rounded-lg shadow-lg" placeholder="Your Name" required />
+              <input type="email" name='email' aria-label='your email' onChange={handleInputChange} value={FormData.email} className="p-4 bg-white rounded-lg shadow-lg" placeholder="Your Email" required />
             </div>
-            <textarea name='message' value={FormData.message} onChange={handleInputChange} className="p-4 bg-white rounded-lg shadow-lg w-full mt-4" rows="4" placeholder="Your Message" required></textarea>
+            <textarea name='message' onChange={handleInputChange} value={FormData.message} className="p-4 bg-white rounded-lg shadow-lg w-full mt-4" rows="4" placeholder="Your Message" required></textarea>
             <button className="mt-4 px-6 py-2 bg-blue-900 text-white rounded-lg shadow-lg hover:bg-blue-500">Send Message</button>
           </form>
           {status && <p className='mt-4 text-lg'>{status}</p>}
