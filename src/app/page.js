@@ -46,13 +46,13 @@ export default function Home() {
       >
         <div className="max-w-7xl mx-auto px-8 py-6 flex justify-between">
           <ul className="flex space-x-4">
-            <li className="text-2xl font-bold">
+            <li className="text-2xl italic font-serif font-bold">
               <a href="#about" className="hover:text-blue-500">ABOUT</a>
             </li>
-            <li className="text-2xl font-bold">
+            <li className="text-2xl italic font-serif font-bold">
               <a href="#projects" className="hover:text-blue-500">PROJECTS</a>
             </li>
-            <li className="text-2xl font-bold">
+            <li className="text-2xl italic font-serif font-bold">
               <a href="#contact" className="hover:text-blue-500">CONTACT</a>
             </li>
           </ul>
@@ -77,7 +77,7 @@ export default function Home() {
         />
         <div className="text-center">
           <motion.h1 
-            className="text-6xl font-light text-black"
+            className="text-6xl italic font-serif font-light text-black"
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ x: [50, 150, 50], opacity: 1, scale: 1 }}
             transition={{ delay: 0.3, duration: 5, ease: [0.5, 0.71, 1, 1.5], }}
@@ -86,7 +86,7 @@ export default function Home() {
             Hi, I am [Mbiatke LurexGalvin Edet]
           </motion.h1>
           <motion.p 
-            className="text-4xl mt-4 font-light text-black"
+            className="text-4xl italic font-serif mt-4 font-light text-black"
             initial={{ opacity: 0, scale: 0.5}}
             animate={{ x: [50, 150, 50], opacity: 1, scale:1 }}
             transition={{ delay: 0.7, duration: 5, ease: [0.5, 0.71, 1, 1.5], }}
@@ -96,7 +96,7 @@ export default function Home() {
           </motion.p>
           <motion.a
             href="#about"
-            className="mt-6 inline-block bg-white text-black px-6 py-2 rounded shadow-lg hover:bg-gray-200"
+            className="mt-6 inline-block bg-white text-black italic font-serif px-6 py-2 rounded shadow-lg hover:bg-gray-200"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1, duration: 1 }}
@@ -110,7 +110,7 @@ export default function Home() {
       <section id="about" className="py-16 bg-gray-100 text-center">
         <div className="max-w-4xl mx-auto">
         <motion.h2
-          className="text-4xl font-bold"
+          className="text-4xl italic font-serif font-bold"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.3 }}
@@ -120,7 +120,7 @@ export default function Home() {
 
         {/* Description with animation */}
         <motion.p
-          className="mt-4 text-3xl"
+          className="mt-4 text-3xl italic font-serif"
           initial={{ opacity: 0, scale: 0.5}}
           animate={{ x: [50, 150, 50],opacity: 1, scale: 1 }}
           transition={{ duration: 5, delay: 3,ease: [0.5, 0.71, 1, 1.5] }}
@@ -135,7 +135,7 @@ export default function Home() {
       {/* Projects Section */}
       <section id="projects" className="py-16 bg-white text-center">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold">PROJECTS</h2>
+          <h2 className="text-4xl italic font-serif font-bold">PROJECTS</h2>
           <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-6">
             {/* Animated Project Card */}
             <motion.div
@@ -143,7 +143,7 @@ export default function Home() {
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
-              <h3 className="text-2xl font-bold">Project One</h3>
+              <h3 className="text-2xl italic font-bold">Project One</h3>
               <p className="mt-2">Counter App.</p>
               <Link href="https://mbiatke-counterapp.netlify.app/" className="text-blue-700 mt-4 inline-block">View Project</Link>
             </motion.div>
@@ -153,7 +153,7 @@ export default function Home() {
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
-              <h3 className="text-2xl font-bold">Project Two</h3>
+              <h3 className="text-2xl italic font-bold">Project Two</h3>
               <p className="mt-2">Motivational Quote App.</p>
               <a href="https://mbiatkenkantaquoteapp.vercel.app/" className="text-blue-700 mt-4 inline-block">View Project</a>
             </motion.div>
@@ -163,7 +163,7 @@ export default function Home() {
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
-              <h3 className="text-2xl font-bold">Project Three</h3>
+              <h3 className="text-2xl italic font-bold">Project Three</h3>
               <p className="mt-2">Weather App.</p>
               <a href="https://lurexweatherapp.netlify.app/" className="text-blue-700 mt-4 inline-block">View Project</a>
             </motion.div>
@@ -173,7 +173,7 @@ export default function Home() {
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
-              <h3 className="text-2xl font-bold">Project Four</h3>
+              <h3 className="text-2xl italic font-bold">Project Four</h3>
               <p className="mt-2">My Github Page.</p>
               <a href="https://github.com/MbiatkeEdet" className="text-blue-700 mt-4 inline-block">View My Github</a>
             </motion.div>
@@ -189,15 +189,15 @@ export default function Home() {
       {/* Contact Section */}
       <section id="contact" className="py-16 bg-gray-100 text-center">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold">CONTACT ME</h2>
-          <p className="mt-4 text-2xl">Feel free to reach out lets work together!</p>
+          <h2 className="text-4xl italic font-serif font-bold">CONTACT ME</h2>
+          <p className="mt-4 text-2xl italic font-serif">Feel free to reach out lets work together!</p>
           <form className="mt-8" onSubmit={handleSubmit}>
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
               <input type="text" name='name' aria-label='your name' onChange={handleInputChange} value={FormData.name} className="p-4 bg-white rounded-lg shadow-lg" placeholder="Your Name" required />
               <input type="email" name='email' aria-label='your email' onChange={handleInputChange} value={FormData.email} className="p-4 bg-white rounded-lg shadow-lg" placeholder="Your Email" required />
             </div>
             <textarea name='message' onChange={handleInputChange} value={FormData.message} className="p-4 bg-white rounded-lg shadow-lg w-full mt-4" rows="4" placeholder="Your Message" required></textarea>
-            <button className="mt-4 px-6 py-2 bg-blue-900 text-white rounded-lg shadow-lg hover:bg-blue-500">Send Message</button>
+            <button className="mt-4 px-6 py-2 bg-blue-900 text-white italic font-serif rounded-lg shadow-lg hover:bg-blue-500">Send Message</button>
           </form>
           {status && <p className='mt-4 text-lg'>{status}</p>}
         </div>
@@ -227,7 +227,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="bg-blue-900 py-6 text-center">
-        <p className="text-yellow-700">&copy; 2024 Mbiatke Nkanta. All rights reserved.</p>
+        <p className="text-yellow-700 italic font-serif">&copy; 2024 Mbiatke Nkanta. All rights reserved.</p>
       </footer>
     </div>
   );
