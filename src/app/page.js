@@ -107,7 +107,7 @@ export default function Home() {
       </motion.section>
 
       {/* About Section */}
-      <section id="about" className="py-16 bg-gray-100 text-center">
+      <section id="about" className="py-16 bg-gray-200 text-center">
         <div className="max-w-4xl mx-auto">
         <motion.h2
           className="text-4xl italic font-serif font-bold"
@@ -119,6 +119,32 @@ export default function Home() {
         </motion.h2>
 
         {/* Description with animation */}
+        <motion.p
+          className="mt-4 text-3xl italic font-serif"
+          initial={{ opacity: 0, scale: 0.5}}
+          animate={{ x: [50, 150, 50],opacity: 1, scale: 1 }}
+          transition={{ duration: 5, delay: 3,ease: [0.5, 0.71, 1, 1.5] }}
+          whileHover={{ scale:1.2}}
+        >
+          I am a Front-end developer with a background in Materials & Metallurgical Engineering from Federal University Of Technology, Owerri. My journey into tech has been driven by a passion for creating intuitive,impactful and user friendly interfaces/experiences.
+        </motion.p>
+        
+        <motion.h2
+          className="text-4xl italic font-serif font-bold mt-6"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.3 }}
+        >
+          EDUCATION
+
+          <h2 className='mt-6 text-blue-800'>Materials & Metallurgical Engineering</h2>
+          <p>Federal University Of Technology, Owerri</p>
+          <p>2015</p>
+
+          <h2 className='mt-6 text-blue-800'>Front-end Web Development</h2>
+          <p>AltSchool Africa</p>
+          <p>2023</p>
+        </motion.h2>
         <motion.p
           className="mt-4 text-3xl italic font-serif"
           initial={{ opacity: 0, scale: 0.5}}
