@@ -139,7 +139,7 @@ export default function Home() {
 
           <h2 className='mt-6 text-blue-800'>Materials & Metallurgical Engineering</h2>
           <p>Federal University Of Technology, Owerri</p>
-          <p>2015</p>
+          <p>2014</p>
 
           <h2 className='mt-6 text-blue-800'>Front-end Web Development</h2>
           <p>AltSchool Africa</p>
@@ -153,7 +153,7 @@ export default function Home() {
           whileHover={{ scale:1.2}}
         >
           I am a web developer with experience in building high-quality websites and applications.
-          My expertise includes HTML, CSS, TailwindCSS, JavaScript, React, Nextjs, and modern web technologies.
+          My expertise includes HTML, CSS, TailwindCSS, JavaScript, React, Nextjs, Chakra UI, Material UI and modern web technologies.
         </motion.p>
         </div>
       </section>
@@ -170,8 +170,8 @@ export default function Home() {
               transition={{ type: "spring", stiffness: 300 }}
             >
               <h3 className="text-2xl italic font-bold">Project One</h3>
-              <p className="mt-2">Counter App.</p>
-              <Link href="https://mbiatke-counterapp.netlify.app/" className="text-blue-700 mt-4 inline-block">View Project</Link>
+              <p className="mt-2">Wedding  App.</p>
+              <Link href="https://mbomalovestory25.vercel.app/" className="text-blue-700 mt-4 inline-block">View Project</Link>
             </motion.div>
 
             <motion.div
