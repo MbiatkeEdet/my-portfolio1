@@ -143,7 +143,7 @@ export default function Home() {
 
           <h2 className='mt-6 text-blue-800'>Front-end Web Development</h2>
           <p>AltSchool Africa</p>
-          <p>2023</p>
+          <p>2022</p>
         </motion.h2>
         <motion.p
           className="mt-4 text-3xl italic font-serif"
@@ -170,8 +170,8 @@ export default function Home() {
               transition={{ type: "spring", stiffness: 300 }}
             >
               <h3 className="text-2xl italic font-bold">Project One</h3>
-              <p className="mt-2">Wedding  App.</p>
-              <Link href="https://mbomalovestory25.vercel.app/" className="text-blue-700 mt-4 inline-block">View Project</Link>
+              <p className="mt-2">Smart Road App</p>
+              <Link href="https://smart-roadapp.netlify.app/" className="text-blue-700 mt-4 inline-block">View Project</Link>
             </motion.div>
 
             <motion.div
