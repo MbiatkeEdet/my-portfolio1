@@ -170,7 +170,7 @@ export default function Home() {
               transition={{ type: "spring", stiffness: 300 }}
             >
               <h3 className="text-2xl font-bold">Project One</h3>
-              <p className="mt-2">Smart Road App</p>
+              <p className="mt-2">Gas Station Management App</p>
               <Link href="https://smart-roadapp.netlify.app/" className="text-blue-700 mt-4 inline-block">View Project</Link>
             </motion.div>
 
@@ -180,6 +180,16 @@ export default function Home() {
               transition={{ type: "spring", stiffness: 300 }}
             >
               <h3 className="text-2xl font-bold">Project Two</h3>
+              <p className="mt-2">Smart Road App</p>
+              <Link href="https://smart-roadapp.netlify.app/" className="text-blue-700 mt-4 inline-block">View Project</Link>
+            </motion.div>
+
+            <motion.div
+              className="bg-gray-100 p-6 rounded-lg shadow-lg"
+              whileHover={{ scale: 1.05 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
+              <h3 className="text-2xl font-bold">Project Three</h3>
               <p className="mt-2">Motivational Quote App.</p>
               <a href="https://mbiatkenkantaquoteapp.vercel.app/" className="text-blue-700 mt-4 inline-block">View Project</a>
             </motion.div>
@@ -189,7 +199,7 @@ export default function Home() {
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
-              <h3 className="text-2xl font-bold">Project Three</h3>
+              <h3 className="text-2xl font-bold">Project Four</h3>
               <p className="mt-2">Weather App.</p>
               <a href="https://lurexweatherapp.netlify.app/" className="text-blue-700 mt-4 inline-block">View Project</a>
             </motion.div>
@@ -199,10 +209,21 @@ export default function Home() {
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
-              <h3 className="text-2xl font-bold">Project Four</h3>
+              <h3 className="text-2xl font-bold">Project Five</h3>
               <p className="mt-2">My Github Page.</p>
               <a href="https://github.com/MbiatkeEdet" className="text-blue-700 mt-4 inline-block">View My Github</a>
             </motion.div>
+
+            <motion.div
+              className="bg-gray-100 p-6 rounded-lg shadow-lg"
+              whileHover={{ scale: 1.05 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
+              <h3 className="text-2xl font-bold">Project Six</h3>
+              <p className="mt-2">Educational App</p>
+              <a href="https://finear.app" className="text-blue-700 mt-4 inline-block">View Project</a>
+            </motion.div>
+
 
             
             
